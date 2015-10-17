@@ -1,6 +1,6 @@
 {
   "name": "robopaint-mode-print",
-  "version": "0.9.6",
+  "version": "0.9.7",
   "type": "robopaint_mode",
   "main": "print.js",
   "author": "techninja",
@@ -9,7 +9,6 @@
     "core": true,
     "debug": true,
     "i18n": "native",
-    "icon": "icon-print",
     "index": "print.html",
     "name": "print",
     "opensvg": true,
@@ -19,6 +18,12 @@
       "jquery",
       "underscore",
       "mediasets"
-    ]
+    ],
+    "graphics": {
+      "icon": "images/print_icon.svg",
+      "previews": [
+        "images/print_preview_1.jpg"
+      ]
+    }
   }
 }
