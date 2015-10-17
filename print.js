@@ -42,6 +42,9 @@ function paperLoadedInit() {
 // Catch CNCServer buffered callbacks
 mode.onCallbackEvent = function(name) {
   switch (name) {
+    case 'autoPaintBegin': // Should happen when we've just started
+      $('#pause').prop('disabled', false); // Enable pause button
+      break;
     case 'autoPaintComplete': // Should happen when we're completely done
       $('#pause').attr('class', 'ready')
         .attr('title', t('modes.print.status.ready'))
@@ -100,7 +103,6 @@ mode.bindControls = function(){
         // Render stroke and fill to the actionLayer
         paper.renderMotionPaths(function(){
           // When done, lets autoPaint em!
-          $('#pause').prop('disabled', false);
           paper.utils.autoPaint(paper.canvas.actionLayer);
         });
       }
