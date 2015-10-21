@@ -1,6 +1,8 @@
 # Automatic Print mode
 The default Automatic Painting mode for RoboPaint
 
+![Print Mode Example](images/print_preview_3.jpg?raw=true)
+
 This module is a mode for [RoboPaint](https://github.com/evil-mad/robopaint),
 the software for drawing robots, and your
 [friendly painting robot kit, the WaterColorBot](http://watercolorbot.com)!
