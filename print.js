@@ -113,12 +113,12 @@ mode.bindControls = function(){
         // Starting Pause =========
         $('#pause').prop('disabled', true).attr('title', t("status.wait"));
         mode.run([
-          ['status', t("status.pausing")],
+          ['status', t("status.pausing"), true], // Run status Immediately
           ['pause']
         ], true); // Insert at the start of the buffer so it happens immediately
 
         mode.onFullyPaused = function(){
-          mode.run('status', t("status.paused"));
+          mode.run('status', t("status.paused"), true);  // Run status Immediately
           $('#buttons button.normal').prop('disabled', false); // Enable options
           $('#pause')
             .addClass('active')
