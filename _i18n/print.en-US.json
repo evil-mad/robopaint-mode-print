@@ -6,10 +6,9 @@
     "basetype": "mode"
   },
   "info":{
-    "description": "Painting Mode: Print your drawing!",
-    "title": "Automatic Paint",
-    "detail": "Automatically paint a given well formed SVG file.",
-    "word": "Print"
+    "name": "Automatic Print Mode",
+    "use": "Automatic Image Print",
+    "detail": "Automatically snap colors to the available media palette and print an SVG file loaded from the example images, or from Create/Edit mode."
   },
   "control":{
     "title": "Auto-paint",
