@@ -22,7 +22,10 @@
     "graphics": {
       "icon": "images/print_icon.svg",
       "previews": [
-        "images/print_preview_1.jpg"
+        "images/print_preview_1.jpg",
+        "images/print_preview_2.jpg",
+        "images/print_preview_3.jpg",
+        "images/print_preview_4.jpg"
       ]
     }
   }
