@@ -137,8 +137,8 @@ mode.bindControls = function(){
         mode.onFullyResumed = function(){
           $('#pause')
             .removeClass('active')
-            .attr('title', t("mode.print.status.pause"))
-            .text(t('common.action.pause'));
+            .text(buffer.length ? t('common.action.pause') : t('common.action.start'))
+            .attr('title', t("mode.print.status.pause"));
           mode.run('status', t("status.resumed"));
         };
       }
