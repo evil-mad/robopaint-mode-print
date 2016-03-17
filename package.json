@@ -1,7 +1,7 @@
 {
   "name": "robopaint-mode-print",
   "version": "1.0.0",
-  "type": "robopaint_mode",
+  "robopaint-type": "mode",
   "main": "print.js",
   "author": "techninja",
   "license": "MIT",
