@@ -65,6 +65,10 @@ mode.onMessage = function(channel, data) {
       mode.run('status', ''); // TODO: Can we do better for the user here?
       paper.canvas.loadSVG(robopaint.svg.load());
       break;
+    case 'updateMediaSet':
+      // When the media set changes, it's a safe move to dump any built work.
+      paper.resetAll();
+      break;
   }
 };
 
