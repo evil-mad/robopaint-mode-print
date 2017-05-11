@@ -1,12 +1,11 @@
 {
   "name": "robopaint-mode-print",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "robopaint-type": "mode",
   "main": "print.js",
   "author": "techninja",
   "license": "MIT",
   "robopaint": {
-    "core": true,
     "debug": true,
     "i18n": "native",
     "index": "print.html",
@@ -28,5 +27,9 @@
         "images/print_preview_4.jpg"
       ]
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evil-mad/robopaint-mode-print.git"
   }
 }
